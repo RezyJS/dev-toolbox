@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans, Inter } from 'next/font/google';
 import './globals.css';
+import { ProjectNavigationMenu } from '@/widgets/project-navigation-menu';
 
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
@@ -24,8 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${notoSans.variable} antialiased`}>
-        {children}
+      <body
+        className={`${inter.variable} ${notoSans.variable} antialiased bg-background`}
+      >
+        <ProjectNavigationMenu>{children}</ProjectNavigationMenu>
       </body>
     </html>
   );
