@@ -1,36 +1,176 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dev Toolbox
 
-## Getting Started
+<p align="center">
+  <strong>Сборник полезных утилит для разработки. Собрано на Next.js && TypeScript.</strong>
+</p>
 
-First, run the development server:
+<p align="center">
+  JSON Formatter • Regex Tester • Color Converter • Base64 Tool • JWT Decoder
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4-38bdf8?logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/shadcn-ui-black" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
+
+---
+
+## О проекте
+
+**Dev Toolbox** — это набор небольших веб‑утилит для разработчиков.
+
+Проект объединяет инструменты, которые часто используются в работе:
+
+- форматирование JSON  
+- тестирование регулярных выражений  
+- конвертация цветов  
+- кодирование Base64  
+- просмотр содержимого JWT токенов  
+
+Основная цель проекта — показать аккуратную архитектуру frontend‑приложения и удобный UX для developer tools.
+
+---
+
+# Возможности
+
+## JSON Formatter
+
+Инструмент для форматирования и проверки JSON.
+
+Функции:
+
+- pretty formatting
+- JSON minify
+- проверка валидности
+- понятные ошибки синтаксиса
+- копирование результата
+- очистка и вставка данных
+
+---
+
+## Regex Tester
+
+Тестер регулярных выражений.
+
+Функции:
+
+- ввод regex‑паттерна
+- тестовый текст
+- поддержка флагов g, i, m
+- подсветка совпадений
+- список найденных матчей
+- отображение ошибок regex
+
+---
+
+## Color Converter
+
+Конвертер цветов между форматами.
+
+Поддерживаемые форматы:
+
+- HEX
+- RGB
+- HSL
+
+Функции:
+
+- автоматическая конвертация
+- превью цвета
+- копирование каждого формата
+- поддержка shorthand HEX (#fff)
+
+---
+
+## Base64 Tool
+
+Инструмент кодирования и декодирования Base64.
+
+Функции:
+
+- encode текст → Base64
+- decode Base64 → текст
+- swap input/output
+- копирование результата
+- корректная работа с Unicode
+
+---
+
+## JWT Decoder
+
+Просмотр содержимого JWT токенов.
+
+Функции:
+
+- декодирование header
+- декодирование payload
+- отображение JSON
+- вывод даты истечения (exp)
+- статус токена (expired / active)
+
+⚠ Подпись токена не проверяется — инструмент только декодирует данные.
+
+---
+
+# Стек технологий
+
+Frontend:
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+Инструменты разработки:
+
+- pnpm
+- ESLint
+- Prettier
+
+Деплой:
+
+- Vercel
+
+---
+
+# Установка
+
+Клонировать репозиторий
+
+```
+git clone https://github.com/RezyJS/dev-toolbox.git
+cd dev-toolbox
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Установить зависимости
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Запустить dev‑сервер
 
-## Learn More
+```
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Открыть
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Скрипты
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+pnpm dev
+pnpm build
+pnpm start
+pnpm lint
+pnpm format
+```
