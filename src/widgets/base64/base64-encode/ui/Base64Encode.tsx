@@ -11,10 +11,16 @@ export default function Base64Encode() {
   return (
     <div className='flex flex-col flex-1 h-full gap-2'>
       <div className='flex flex-col gap-1'>
-        <label htmlFor='base64-decoded-input'>Base64 Encoder</label>
+        <label
+          htmlFor='base64-decoded-input'
+          className='font-semibold'
+        >
+          Base64 Encoder
+        </label>
         <Textarea
           id='base64-decoded-input'
           className='h-60'
+          placeholder='some text here…'
           value={decodedString}
           onChange={(e) => setDecodedString(e.currentTarget.value)}
         />

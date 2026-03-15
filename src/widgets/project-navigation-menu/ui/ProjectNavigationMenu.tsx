@@ -1,19 +1,12 @@
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
-
-const links = [
-  { displayName: 'JSON Formatter', href: '#' },
-  { displayName: 'RegEx Tester', href: '#' },
-  { displayName: 'Color converter', href: '#' },
-  { displayName: 'Base64 converter', href: '/base64-converter' },
-  { displayName: 'JWT Decoder', href: '#' },
-];
+import { links } from '../lib/consts';
 
 export default function ProjectNavigationMenu(props: PropsWithChildren) {
   const { children } = props;
 
   return (
-    <div className='w-dvw h-dvh m-0 p-0 flex flex-col'>
+    <div className='m-0 flex h-dvh w-dvw flex-col p-0'>
       <header className='py-2 px-6 bg-accent flex justify-between'>
         <Link
           className='text-primary'
@@ -33,7 +26,7 @@ export default function ProjectNavigationMenu(props: PropsWithChildren) {
           ))}
         </div>
       </header>
-      <main className='w-full flex-1'>{children}</main>
+      <main className='flex min-h-0 w-full flex-1 p-4'>{children}</main>
       <footer className='flex justify-center p-2 bg-accent font-semibold text-md text-primary'>
         This is Rezy&apos;s webpage.
       </footer>
