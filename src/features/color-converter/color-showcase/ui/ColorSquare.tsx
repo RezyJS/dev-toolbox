@@ -1,4 +1,4 @@
-import { decToHex } from '@/shared/lib/decToHex';
+import { decToHex } from '@/shared/lib/HexConverters';
 import { TextPlate } from '@/shared/ui/text-plate';
 
 type TColorSquareProps = {

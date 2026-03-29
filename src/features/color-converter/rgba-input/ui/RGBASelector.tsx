@@ -1,4 +1,4 @@
-import { decToHex } from '@/shared/lib/decToHex';
+import { decToHex } from '@/shared/lib/HexConverters';
 import { Button } from '@/shared/ui/button';
 import { Slider } from '@/shared/ui/slider';
 import { TextPlate } from '@/shared/ui/text-plate';
